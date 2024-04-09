@@ -1,0 +1,4 @@
+#Tue Apr 09 06:54:32 BRT 2024
+base.0=/Users/amandadetofol/Desktop/desenvolvimento/client_manager/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
