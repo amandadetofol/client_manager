@@ -1,3 +1,4 @@
+import 'package:client_control/models/client_type.dart';
 import 'package:client_control/models/clients.dart';
 import 'package:client_control/pages/client_types_page.dart';
 import 'package:client_control/pages/clients_page.dart';
@@ -13,7 +14,12 @@ void main() {
           create: (context) => Clients(clients: []),
         ),
         ChangeNotifierProvider(
-          create: (context) => Types(types: []),
+          create: (context) => Types(
+            types: [
+              ClientType(name: "Gold", icon: Icons.credit_card),
+              ClientType(name: "Platinum", icon: Icons.credit_card_off_outlined),
+            ],
+          ),
         )
       ],
       child: const MyApp(),

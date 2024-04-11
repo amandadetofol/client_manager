@@ -16,7 +16,6 @@ class ClientsPage extends StatefulWidget {
 }
 
 class _ClientsPageState extends State<ClientsPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,9 +40,7 @@ class _ClientsPageState extends State<ClientsPage> {
                 iconColor: Colors.indigo,
               ),
               onDismissed: (direction) {
-                setState(() {
-                  list.clients.removeAt(index);
-                });
+                list.remove(index);
               },
             );
           },
